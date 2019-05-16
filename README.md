@@ -4,32 +4,32 @@
 ```
 Show Databases
 ```
-> show databases
+  > show databases
 ```
 Use a database
 ```
-> use reportsdb
+  > use reportsdb
 ```
 Drop the database
 ```
-> db.dropDatabase()
+  > db.dropDatabase()
 ```
 Show Contents of database
 ```
-> db.reports.find({})
+  > db.reports.find({})
 
 
 ### CMD Import / Export MongoDB ( as administrator )
 ```
 Go to folder with mongoexport/monogimport exe
 ```
-> cd C:\Program Files\MongoDB\Server\4.0\bin
+  > cd C:\Program Files\MongoDB\Server\4.0\bin
 ```
 Export reportsdb with collection reports in json format
 ```
-> mongoexport -d reportsdb -c reports -o exportReportDBOutput.json
+  > mongoexport -d reportsdb -c reports -o exportReportDBOutput.json
 ```
 Import reportsdb with collection reports from .json file
 ```
-> mongoimport --db reportsdb --collection reports --file exportReportDBOutput.json
+  >  mongoimport --db reportsdb --collection reports --file exportReportDBOutput.json
 ```
