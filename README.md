@@ -1,7 +1,6 @@
-# Useful Commands in MongoDB CLI and import export example of MongoDB
+## Useful Commands in MongoDB CLI and import export example of MongoDB
 
-```
-## CLI in MongDB
+### CLI in MongDB
 ```
 Show Databases
 ```
@@ -18,10 +17,9 @@ Drop the database
 Show Contents of database
 ```
 > db.reports.find({})
-```
 
-```
-## CMD Import / Export MongoDB ( as administrator )
+
+### CMD Import / Export MongoDB ( as administrator )
 ```
 Go to folder with mongoexport/monogimport exe
 ```
