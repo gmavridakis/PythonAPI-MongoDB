@@ -17,6 +17,10 @@ Drop the database
 Show Contents of database
 ```
   > db.reports.find({})
+```
+ Show IP's connected to db
+```
+  > db.currentOp(true).inprog.forEach(function(d){if(d.client)print(d.client, d.connectionId)})
 
 
 ### CMD Import / Export MongoDB ( as administrator )
